@@ -24,3 +24,6 @@ COPY --from=base /app/.next ./.next
 
 EXPOSE 3000
 CMD ["npm", "start"]
+
+# docker build -t nextjs:v1 -f Dockerfile.prod .
+# docker run -p 3000:3000 nextjs:v1
